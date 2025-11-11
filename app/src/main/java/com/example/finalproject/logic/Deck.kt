@@ -4,14 +4,15 @@ package com.example.finalproject.logic
 abstract class Deck(
     val name: String = "Unnamed deck",
 ) {
+    // The number of cards in the deck
+    abstract val size: Int
+
     // Get the next card that should be displayed.
     abstract fun getNextCard(): DeckCard
 
     // Submit an answer for a card.
     abstract fun submitAnswer(card: DeckCard, answer: Answer)
 
-    // The number of cards in the deck
-    abstract fun size(): Int
 }
 
 // A deck using the Lietner system for scheduling cards.
@@ -36,6 +37,8 @@ class LietnerDeck(
         require(numBoxes > 0)
     }
 
+    override val size = boxes.sumOf{ box -> box.count() }
+
     override fun getNextCard(): DeckCard {
         return boxes.first { box -> !box.isEmpty() }.first()
     }
@@ -55,10 +58,6 @@ class LietnerDeck(
                 moveCard(card, boxes[boxIndex], boxes.first())
             }
         }
-    }
-
-    override fun size(): Int {
-        return boxes.sumOf { box -> box.count() }
     }
 
     // Find the index of the box which contains the provided card.
