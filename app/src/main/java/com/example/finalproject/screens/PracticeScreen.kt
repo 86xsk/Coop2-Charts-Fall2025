@@ -5,8 +5,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavBackStackEntry
+import com.example.finalproject.logic.Deck
 
 @Composable
 fun PracticeScreen() {
-  Text("PracticeScreen test text")
+  Text("Choose a deck:")
+}
+
+fun GetDecks(): List<Deck> {
+  TODO()
 }
