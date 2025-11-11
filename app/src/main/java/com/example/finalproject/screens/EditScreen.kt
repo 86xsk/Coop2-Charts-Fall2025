@@ -1,4 +1,4 @@
-package com.example.cooplearningproj.screens
+package com.example.finalproject.screens
 
 import androidx.compose.animation.AnimatedContentScope
 import androidx.compose.material3.Text
@@ -7,6 +7,6 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavBackStackEntry
 
 @Composable
-fun StatsScreen() {
-  Text("StatsScreen test text")
+fun EditScreen() {
+  Text("EditScreen test text")
 }

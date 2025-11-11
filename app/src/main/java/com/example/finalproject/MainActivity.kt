@@ -1,4 +1,4 @@
-package com.example.cooplearningproj
+package com.example.finalproject
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -17,15 +17,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.cooplearningproj.destination.Destination
-import com.example.cooplearningproj.extensions.color.darken
-import com.example.cooplearningproj.extensions.color.lighten
-import com.example.cooplearningproj.navigation.BottomNav
-import com.example.cooplearningproj.navigation.NAV_ITEMS
-import com.example.cooplearningproj.screens.EditScreen
-import com.example.cooplearningproj.screens.PracticeScreen
-import com.example.cooplearningproj.screens.StatsScreen
-import com.example.cooplearningproj.ui.theme.CoopLearningProjTheme
+import com.example.finalproject.destination.Destination
+import com.example.finalproject.extensions.color.darken
+import com.example.finalproject.extensions.color.lighten
+import com.example.finalproject.navigation.BottomNav
+import com.example.finalproject.navigation.NAV_ITEMS
+import com.example.finalproject.screens.EditScreen
+import com.example.finalproject.screens.PracticeScreen
+import com.example.finalproject.screens.StatsScreen
+import com.example.finalproject.ui.theme.FinalProjectTheme
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CoopLearningProjTheme {
+            FinalProjectTheme {
                 val navController = rememberNavController()
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
@@ -58,7 +58,7 @@ class MainActivity : ComponentActivity() {
                     TestComposable()
                     NavHost(
                         navController = navController,
-                        startDestination = com.example.cooplearningproj.navigation.DEFAULT_DESTINATION.route,
+                        startDestination = com.example.finalproject.navigation.DEFAULT_DESTINATION.route,
                         modifier = Modifier.padding(innerPadding)
                     ) {
                         composable(Destination.Stats.route) {

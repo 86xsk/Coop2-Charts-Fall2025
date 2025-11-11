@@ -1,4 +1,4 @@
-package com.example.cooplearningproj.ui.theme
+package com.example.finalproject.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

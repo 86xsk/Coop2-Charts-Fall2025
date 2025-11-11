@@ -1,4 +1,4 @@
-package com.example.cooplearningproj.destination
+package com.example.finalproject.destination
 
 open class Destination(val route: String) {
     object Stats: Destination("stats")

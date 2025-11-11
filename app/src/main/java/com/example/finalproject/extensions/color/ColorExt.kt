@@ -1,4 +1,4 @@
-package com.example.cooplearningproj.extensions.color
+package com.example.finalproject.extensions.color
 
 import androidx.annotation.FloatRange
 import androidx.compose.ui.graphics.Color

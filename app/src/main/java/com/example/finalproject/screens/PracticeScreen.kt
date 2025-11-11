@@ -1,4 +1,4 @@
-package com.example.cooplearningproj.screens
+package com.example.finalproject.screens
 
 import androidx.compose.animation.AnimatedContentScope
 import androidx.compose.material3.Text

@@ -1,4 +1,4 @@
-package com.example.cooplearningproj.ui.theme
+package com.example.finalproject.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -34,7 +34,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun CoopLearningProjTheme(
+fun FinalProjectTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,

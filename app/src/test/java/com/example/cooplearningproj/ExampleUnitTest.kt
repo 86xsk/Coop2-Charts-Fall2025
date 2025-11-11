@@ -1,4 +1,4 @@
-package com.example.cooplearningproj
+package com.example.finalproject
 
 import org.junit.Test
 

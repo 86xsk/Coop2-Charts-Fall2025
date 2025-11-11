@@ -1,4 +1,4 @@
-package com.example.cooplearningproj.navigation
+package com.example.finalproject.navigation
 
 import androidx.compose.animation.AnimatedContentScope
 import androidx.compose.material3.Icon
@@ -10,11 +10,11 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
 import androidx.wear.compose.navigation.currentBackStackEntryAsState
-import com.example.cooplearningproj.destination.Destination
-import com.example.cooplearningproj.extensions.string.upperFirstChar
-import com.example.cooplearningproj.screens.EditScreen
-import com.example.cooplearningproj.screens.PracticeScreen
-import com.example.cooplearningproj.screens.StatsScreen
+import com.example.finalproject.destination.Destination
+import com.example.finalproject.extensions.string.upperFirstChar
+import com.example.finalproject.screens.EditScreen
+import com.example.finalproject.screens.PracticeScreen
+import com.example.finalproject.screens.StatsScreen
 
 data class NavItem(val destination: Destination, val iconPainter: Painter?)
 val NAV_ITEMS: List<NavItem> = listOf(

@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.cooplearningproj"
+    namespace = "com.example.finalproject"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.cooplearningproj"
+        applicationId = "com.example.finalproject"
         minSdk = 25
         targetSdk = 36
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.example.cooplearningproj.extensions.string
+package com.example.finalproject.extensions.string
 
 /*
 Extension function
