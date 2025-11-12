@@ -47,7 +47,8 @@ class MainActivity : ComponentActivity() {
                                 scrolledContainerColor = Color.Green,
                                 navigationIconContentColor = Color.White,
                                 titleContentColor = Color.White,
-                                actionIconContentColor = Color.Red
+                                actionIconContentColor = Color.Red,
+                                subtitleContentColor = Color.Black,
                             )
                         )
                     },
@@ -55,7 +56,6 @@ class MainActivity : ComponentActivity() {
                         BottomNav(navController)
                     }
                 ) { innerPadding ->
-                    TestComposable()
                     NavHost(
                         navController = navController,
                         startDestination = com.example.finalproject.navigation.DEFAULT_DESTINATION.route,
@@ -75,10 +75,4 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-}
-
-@Composable
-fun TestComposable() {
-    Text("Placeholder testing text")
-
 }
