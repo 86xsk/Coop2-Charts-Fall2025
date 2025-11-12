@@ -15,6 +15,8 @@ abstract class Deck(
 
 }
 
+typealias Box = MutableList<DeckCard>
+
 // A deck using the Lietner system for scheduling cards.
 // https://en.wikipedia.org/wiki/Leitner_system
 class LietnerDeck(
@@ -22,7 +24,6 @@ class LietnerDeck(
     numBoxes: Int,
     cards: MutableList<Card>,
 ): Deck(name) {
-    private typealias Box = MutableList<DeckCard>
     private val boxes: List<Box> =
         List(numBoxes) {
             if (it == 0) cards.map { card ->
